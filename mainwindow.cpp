@@ -43,3 +43,10 @@ void MainWindow::on_pushButton_clicked()
 
 }
 
+void MainWindow::on_pushButton_vicon_bridge_clicked()
+{
+
+    cout << "clicked vicon_bridge." << endl;
+
+    system("gnome-terminal -x bash -c \". ~/catkin_ws/devel/setup.bash; roslaunch vicon_bridge vicon.launch datastream_hostport:=\\\"131.151.8.114:801\\\"; echo Finished roslaunch mavros apm2.launch; bash\"");
+}

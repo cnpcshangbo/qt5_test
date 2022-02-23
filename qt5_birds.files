@@ -1,0 +1,9 @@
+CMakeLists.txt
+Readme.md
+Vicon.png
+main.cpp
+mainwindow.cpp
+mainwindow.h
+mainwindow.ui
+quad.png
+quad_icon.jpg
