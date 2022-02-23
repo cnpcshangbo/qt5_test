@@ -38,7 +38,7 @@ void MainWindow::on_pushButton_clicked()
     cout << "clicked." << endl;
 //    QProcess builder;
 //    builder.start("gnome-terminal", QStringList() << "source ~/catkin_ws/devel/setup.bash; roslaunch mavros mavros.launch");
-    system("gnome-terminal -x sh -c \". ~/catkin_ws/devel/setup.sh; roslaunch mavros apm2.launch; bash\"");
+    system("gnome-terminal -x bash -c \". ~/catkin_ws/devel/setup.bash; roslaunch mavros apm2.launch; echo Finished roslaunch mavros apm2.launch; bash\"");
 
 
 }
