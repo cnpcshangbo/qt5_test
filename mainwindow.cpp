@@ -2,6 +2,8 @@
 #include "./ui_mainwindow.h"
 #include <iostream>
 #include <QPixmap>
+#include <QProcess>
+
 using namespace std;
 
 MainWindow::MainWindow(QWidget *parent)
@@ -34,6 +36,10 @@ void MainWindow::on_pushButton_clicked()
 {
     ui->pushButton->setText("clicked");
     cout << "clicked." << endl;
+//    QProcess builder;
+//    builder.start("gnome-terminal", QStringList() << "source ~/catkin_ws/devel/setup.bash; roslaunch mavros mavros.launch");
+    system("gnome-terminal -x sh -c \". ~/catkin_ws/devel/setup.sh; roslaunch mavros apm2.launch; bash\"");
+
 
 }
 
