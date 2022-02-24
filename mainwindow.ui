@@ -76,7 +76,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_3">
+   <widget class="QPushButton" name="pushButton_vicon2mavros">
     <property name="geometry">
      <rect>
       <x>330</x>

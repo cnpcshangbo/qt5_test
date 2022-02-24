@@ -7,4 +7,6 @@
 - Use QTimer to check message rates
 - [x] vicon\_bridge works
 - [x] Use relative path for the images
-- [ ] Change environment from ROS2 to ROS in ~/.bashrc
+- [x] Change environment from ROS2 to ROS in ~/.bashrc
+- [ ] Add command for vicon2mavros
+- [ ] Add command for mavros
