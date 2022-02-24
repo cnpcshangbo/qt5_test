@@ -13,13 +13,13 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
 
     //load vicon image
-    QPixmap pic("/home/bo/code/qt5_test/Vicon.png");
+    QPixmap pic("../Vicon.png");
     int w = ui->label_vicon->width();
     int h = ui->label_vicon->height();
     ui->label_vicon->setPixmap(pic.scaled(w,h,Qt::KeepAspectRatio));
 
     //load quad image
-    QPixmap pic_quad("/home/bo/code/qt5_test/quad.png");
+    QPixmap pic_quad("../quad.png");
     int w_quad = ui->label_quad->width();
     int h_quad = ui->label_quad->height();
     ui->label_quad->setPixmap(pic_quad.scaled(w_quad,h_quad,Qt::KeepAspectRatio));
