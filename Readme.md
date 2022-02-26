@@ -9,4 +9,7 @@
 - [x] Use relative path for the images
 - [x] Change environment from ROS2 to ROS in ~/.bashrc
 - [x] Add command for vicon2mavros
-- [ ] Add command for mavros
+- [x] Add command for mavros
+- [ ] [Optional] Label last message time with color (30 Hz(green); 1 Hz(yellow); > 1 Hz(red));
+- [ ] Pack sectioned girder detection with ROS interface(horizontal_position; vertical position, etc. Check documentation/code for details.)
+- [ ] Qt-designer: Add modules for horizontal control test(record data?)
