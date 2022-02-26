@@ -8,5 +8,5 @@
 - [x] vicon\_bridge works
 - [x] Use relative path for the images
 - [x] Change environment from ROS2 to ROS in ~/.bashrc
-- [ ] Add command for vicon2mavros
+- [x] Add command for vicon2mavros
 - [ ] Add command for mavros
