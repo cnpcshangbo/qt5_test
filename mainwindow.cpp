@@ -55,3 +55,8 @@ void MainWindow::on_pushButton_vicon2mavros_clicked()
     cout << "vicon2mavros clicked." << endl;
     system("gnome-terminal -x bash -c \". ~/catkin_ws/devel/setup.bash; rosrun vicon_to_mavros talker; echo Finished rosrun vicon_to_mavros talker; bash\"");
 }
+void MainWindow::on_pushButton_mavros_clicked()
+{
+    cout << "mavros button clicked." << endl;
+    system("gnome-terminal -x bash -c \". ~/catkin_ws/devel/setup.bash; roslaunch mavros apm2.launch fcu_url:=/dev/ttyACM0:57600; echo Finished roslaunch mavros apm2.launch fcu_url:=/dev/ttyACM0:57600; bash\"");
+}

@@ -89,7 +89,7 @@
      <string>Vicon2Mavros</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_4">
+   <widget class="QPushButton" name="pushButton_mavros">
     <property name="geometry">
      <rect>
       <x>520</x>
