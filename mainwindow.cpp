@@ -63,4 +63,5 @@ void MainWindow::on_pushButton_mavros_clicked()
 void MainWindow::on_pushButton_girder_clicked()
 {
     cout << "girder button clicked." << endl;
+    system("gnome-terminal -x bash -c \". ~/catkin_ws/devel/setup.bash; rosrun girder_detection section; echo Finished rosrun girder_detection section; bash\"");
 }
