@@ -12,7 +12,7 @@
 - [x] Add command for mavros
 - [ ] [Optional] Label last message time with color (30 Hz(green); 1 Hz(yellow); > 1 Hz(red));
 - [x] Install sectioned-girder detection
-- [ ] Add GUI shortcut to destop and menu
+- [x] Add GUI shortcut to destop and menu
 - [ ] Install horizontal controller
 - [ ] Connect sectioned-girder-detection and horizontal controller
 - [ ] Pack sectioned girder detection with ROS interface(horizontal_position; vertical position, etc. Check documentation/code for details.)

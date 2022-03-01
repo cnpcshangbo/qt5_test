@@ -65,3 +65,9 @@ void MainWindow::on_pushButton_girder_clicked()
     cout << "girder button clicked." << endl;
     system("gnome-terminal -x bash -c \". ~/catkin_ws/devel/setup.bash; rosrun girder_detection section; echo Finished rosrun girder_detection section; bash\"");
 }
+void MainWindow::on_pushButton_horizontal_clicked()
+{
+    cout << "horizontal button clicked." << endl;
+    system("gnome-terminal -x bash -c \". ~/catkin_ws/devel/setup.bash; roslaunch girder_detection horizontal.launch; echo Finished horizontal_controller; bash\"");
+ 
+}
