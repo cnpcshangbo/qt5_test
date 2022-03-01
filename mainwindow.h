@@ -20,6 +20,7 @@ private slots:
     void on_pushButton_vicon_bridge_clicked();
     void on_pushButton_vicon2mavros_clicked();
     void on_pushButton_mavros_clicked();
+    void on_pushButton_girder_clicked();
 private:
     Ui::MainWindow *ui;
 };

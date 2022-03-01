@@ -74,3 +74,4 @@ Thumbs.db
 /.idea/
 /cmake-build-debug/
 /build/
+ninja/

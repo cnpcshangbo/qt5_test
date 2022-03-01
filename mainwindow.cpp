@@ -60,3 +60,7 @@ void MainWindow::on_pushButton_mavros_clicked()
     cout << "mavros button clicked." << endl;
     system("gnome-terminal -x bash -c \". ~/catkin_ws/devel/setup.bash; roslaunch mavros apm2.launch fcu_url:=/dev/ttyACM0:57600; echo Finished roslaunch mavros apm2.launch fcu_url:=/dev/ttyACM0:57600; bash\"");
 }
+void MainWindow::on_pushButton_girder_clicked()
+{
+    cout << "girder button clicked." << endl;
+}
