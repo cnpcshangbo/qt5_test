@@ -3,6 +3,8 @@
 #include <iostream>
 #include <QPixmap>
 #include <QProcess>
+#include <string>
+// #include <cstdlib>
 
 using namespace std;
 
@@ -47,8 +49,15 @@ void MainWindow::on_pushButton_vicon_bridge_clicked()
 {
 
     cout << "clicked vicon_bridge." << endl;
+    cout << ui->lineEdit_vicon->text().toStdString() << endl;
+    string viconStart("gnome-terminal -x bash -c \". ~/catkin_ws/devel/setup.bash; roslaunch vicon_bridge vicon.launch datastream_hostport:=\\\"");
+    string viconIP(ui->lineEdit_vicon->text().toStdString());
+    string viconEnd("\\\"; echo Finished roslaunch mavros apm2.launch; bash\"");
+    string viconCmd = viconStart + viconIP + viconEnd;
+    cout << viconCmd << endl;
+    system(viconCmd.c_str());
 
-    system("gnome-terminal -x bash -c \". ~/catkin_ws/devel/setup.bash; roslaunch vicon_bridge vicon.launch datastream_hostport:=\\\"131.151.8.114:801\\\"; echo Finished roslaunch mavros apm2.launch; bash\"");
+    // system("gnome-terminal -x bash -c \". ~/catkin_ws/devel/setup.bash; roslaunch vicon_bridge vicon.launch datastream_hostport:=\\\"131.151.8.114:801\\\"; echo Finished roslaunch mavros apm2.launch; bash\"");
 }
 void MainWindow::on_pushButton_vicon2mavros_clicked()
 {

@@ -4,5 +4,9 @@
     ],
     "python.analysis.extraPaths": [
         "/opt/ros/galactic/lib/python3.8/site-packages"
-    ]
+    ],
+    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+    "files.associations": {
+        "ostream": "cpp"
+    }
 }
