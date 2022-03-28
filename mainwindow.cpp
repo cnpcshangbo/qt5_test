@@ -80,3 +80,15 @@ void MainWindow::on_pushButton_horizontal_clicked()
     system("gnome-terminal -x bash -c \". ~/catkin_ws/devel/setup.bash; roslaunch girder_detection horizontal.launch; echo Finished horizontal_controller; bash\"");
  
 }
+
+void MainWindow::on_pushButton_load_clicked()
+{
+    cout << "loaded config. " << endl;
+}
+
+
+void MainWindow::on_pushButton_save_clicked()
+{
+    cout << "saved config. " << endl;
+}
+

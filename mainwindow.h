@@ -22,6 +22,10 @@ private slots:
     void on_pushButton_mavros_clicked();
     void on_pushButton_girder_clicked();
     void on_pushButton_horizontal_clicked();
+    void on_pushButton_load_clicked();
+
+    void on_pushButton_save_clicked();
+
 private:
     Ui::MainWindow *ui;
 };
