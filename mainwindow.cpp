@@ -66,7 +66,7 @@ void MainWindow::on_pushButton_vicon2mavros_clicked()
 void MainWindow::on_pushButton_mavros_clicked()
 {
     cout << "mavros button clicked." << endl;
-    system("gnome-terminal -x bash -c \". ~/catkin_ws/devel/setup.bash; roslaunch mavros px4.launch fcu_url:=/dev/serial0:921600; echo Finished roslaunch mavros px4.launch fcu_url:=/dev/serial0:921600; bash\"");
+    system("gnome-terminal -x bash -c \". ~/catkin_ws/devel/setup.bash; source ~/catkin_ws_mavros/devel/setup.bash; roslaunch mavros px4.launch fcu_url:=/dev/serial0:921600; echo Finished source ~/catkin_ws_mavros/devel/setup.bash; roslaunch mavros px4.launch fcu_url:=/dev/serial0:921600; bash\"");
 }
 void MainWindow::on_pushButton_girder_clicked()
 {
