@@ -40,8 +40,7 @@ void MainWindow::on_pushButton_clicked()
     cout << "clicked." << endl;
 //    QProcess builder;
 //    builder.start("gnome-terminal", QStringList() << "source ~/catkin_ws/devel/setup.bash; roslaunch mavros mavros.launch");
-    system("gnome-terminal -x bash -c \". ~/catkin_ws/devel/setup.bash; roslaunch mavros apm2.launch; echo Finished roslaunch mavros apm2.launch; bash\"");
-
+    system("gnome-terminal -x bash -c \". ~/catkin_ws/devel/setup.bash; roslaunch mavros px4.launch fcu_url:=/dev/serial0:921600; echo Finished roslaunch mavros px4.launch fcu_url:=/dev/serial0:921600; bash\"");
 
 }
 
@@ -67,7 +66,7 @@ void MainWindow::on_pushButton_vicon2mavros_clicked()
 void MainWindow::on_pushButton_mavros_clicked()
 {
     cout << "mavros button clicked." << endl;
-    system("gnome-terminal -x bash -c \". ~/catkin_ws/devel/setup.bash; roslaunch mavros apm2.launch fcu_url:=/dev/ttyACM0:57600; echo Finished roslaunch mavros apm2.launch fcu_url:=/dev/ttyACM0:57600; bash\"");
+    system("gnome-terminal -x bash -c \". ~/catkin_ws/devel/setup.bash; roslaunch mavros px4.launch fcu_url:=/dev/serial0:921600; echo Finished roslaunch mavros px4.launch fcu_url:=/dev/serial0:921600; bash\"");
 }
 void MainWindow::on_pushButton_girder_clicked()
 {
